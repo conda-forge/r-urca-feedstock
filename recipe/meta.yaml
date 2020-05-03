@@ -15,7 +15,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1004
+  number: 1005
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -27,17 +27,17 @@ requirements:
     - {{ compiler('fortran') }}  # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('m2w64_fortran') }}        # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}make
+    - {{ posix }}sed               # [win]
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-nlme
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - {{ native }}gcc-libs         # [win]
     - r-nlme
 
 test:
