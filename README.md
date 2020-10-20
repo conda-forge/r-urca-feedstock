@@ -3,7 +3,7 @@ About r-urca
 
 Home: https://CRAN.R-project.org/package=urca
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-urca-feedstock/blob/master/LICENSE.txt)
 
