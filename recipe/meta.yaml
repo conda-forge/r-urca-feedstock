@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: urca_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/urca_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/urca/urca_{{ version }}.tar.gz
@@ -47,11 +46,12 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=urca
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Unit root and cointegration tests encountered in applied  econometric analysis are
     implemented.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
